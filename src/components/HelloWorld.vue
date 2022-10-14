@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <GridView></GridView>
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -31,8 +32,13 @@
 </template>
 
 <script>
+import {GridView} from '@realgrid/vue-realgrid';
+
 export default {
   name: 'HelloWorld',
+  components:{
+    GridView
+  },
   props: {
     msg: String
   }
